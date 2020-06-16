@@ -222,7 +222,7 @@ public class DatasetTest {
 
     return CreateDataset.newBuilder()
         .setName(datasetName)
-        .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
+        // .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
         .setDatasetVisibility(DatasetVisibility.PRIVATE)
         .addTags("tag_x")
         .addTags("tag_y")
@@ -1849,7 +1849,7 @@ public class DatasetTest {
             .toBuilder()
             .setRawDatasetVersionInfo(
                 RawDatasetVersionInfo.newBuilder().setSize(1).setNumRecords(1).build())
-            .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
+            // .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
             .build();
     createDatasetVersionResponse =
         datasetVersionServiceStub.createDatasetVersion(createDatasetVersionRequest);
@@ -2072,7 +2072,7 @@ public class DatasetTest {
             .toBuilder()
             .setRawDatasetVersionInfo(
                 RawDatasetVersionInfo.newBuilder().setSize(1).setNumRecords(1).build())
-            .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
+            // .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
             .build();
     createDatasetVersionResponse =
         datasetVersionServiceStub.createDatasetVersion(createDatasetVersionRequest);

@@ -185,7 +185,7 @@ public class DatasetVersionTest {
     return CreateDatasetVersion.newBuilder()
         .setDatasetId(datasetId)
         .setDescription("this is the description of datsetVersion")
-        .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
+        // .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
         .setDatasetVersionVisibility(DatasetVisibilityEnum.DatasetVisibility.PRIVATE)
         .addTags("DatasetVersion_tag_x")
         .addTags("DatasetVersion_tag_y")
@@ -235,7 +235,7 @@ public class DatasetVersionTest {
             .toBuilder()
             .setRawDatasetVersionInfo(
                 RawDatasetVersionInfo.newBuilder().setSize(1).setNumRecords(1).build())
-            .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
+            // .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
             .build();
     createDatasetVersionResponse =
         datasetVersionServiceStub.createDatasetVersion(createDatasetVersionRequest);
@@ -317,7 +317,7 @@ public class DatasetVersionTest {
             .toBuilder()
             .setRawDatasetVersionInfo(
                 RawDatasetVersionInfo.newBuilder().setSize(1).setNumRecords(1).build())
-            .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
+            // .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
             .build();
     createDatasetVersionResponse =
         datasetVersionServiceStub.createDatasetVersion(createDatasetVersionRequest);
@@ -487,7 +487,7 @@ public class DatasetVersionTest {
             .toBuilder()
             .setRawDatasetVersionInfo(
                 RawDatasetVersionInfo.newBuilder().setSize(1).setNumRecords(1).build())
-            .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
+            // .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
             .build();
     createDatasetVersionResponse =
         datasetVersionServiceStub.createDatasetVersion(createDatasetVersionRequest);
@@ -1905,7 +1905,7 @@ public class DatasetVersionTest {
             .toBuilder()
             .setRawDatasetVersionInfo(
                 RawDatasetVersionInfo.newBuilder().setSize(1).setNumRecords(1).build())
-            .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
+            // .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
             .build();
     createDatasetVersionResponse =
         datasetVersionServiceStub.createDatasetVersion(createDatasetVersionRequest);
@@ -1989,7 +1989,7 @@ public class DatasetVersionTest {
             .toBuilder()
             .setRawDatasetVersionInfo(
                 RawDatasetVersionInfo.newBuilder().setSize(1).setNumRecords(1).build())
-            .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
+            // .setDatasetType(DatasetTypeEnum.DatasetType.RAW)
             .build();
     createDatasetVersionResponse =
         datasetVersionServiceStub.createDatasetVersion(createDatasetVersionRequest);
